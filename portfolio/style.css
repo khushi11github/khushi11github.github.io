@@ -91,3 +91,37 @@ header {
   object-fit: cover;
 }
 
+.Services{
+     background-color:rgb(105, 201, 210);
+}
+.Services h1 {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  margin-bottom: 32px;
+  font-size: 2.5rem;
+  color: #f7f8f4;
+  font-weight: 700;
+}
+
+.service-container{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+  border-radius: 24px;
+  margin: 40px auto;
+  
+
+  max-width: 1200px;
+}
+.service-box {
+  background: #f3f3f3ac;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+
+}
