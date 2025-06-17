@@ -1,7 +1,7 @@
 const loginForm = ()=>{
     const str = `<div>
          <h3>Login Form </h3>
-         <input name ="email" placeholder="email"><br><br>
+         <input name ="email" type="email" placeholder="email"><br><br>
          <input name ="password" type="password" placeholder="password"><br>
          <p><button onClick='showHome()'>submit</button></p>
 
@@ -16,8 +16,8 @@ const RegisterForm=()=>{
     const str=`
     <div>
     <h3>Register Form</h3>
-    <input name="name" placeholder="Name"><br><br>
-    <input name="email" placeholder="Email"><br><br>
+    <input name="name" type="text" placeholder="Name"><br><br>
+    <input name="email" type="email" placeholder="Email"><br><br>
     <input name="password" type="password" placeholder="Password"><br><br>
 
     <p><button onclick="loginForm()">Submit</button></p>
