@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multi media and hyperlinks</h1>
+    <div id="menu">
+        <a href="#audiosection">AUDIO PLAYLIST</a>
+        <a href="#videosection">Video playlist</a>
+    </div>
+    <h1 id="audiosection">Audio Playlist</h1>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+
+    </audio>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <h1 id="videosection">Video Playlist</h1>
+<p><a href="#menu">Go Top</a></p>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    
+    <video width="320" height="240" autoplay muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+   <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <track 
+         src="https://www.w3schools.com/html/mov_bbb_en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English">
+        />
+
+    </video>
+
+    <a href="google.com" target="_blank">Go to Google</a>
+</body>
+</html>
