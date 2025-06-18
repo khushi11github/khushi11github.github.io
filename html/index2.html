@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Tag</h1>
+    <form action="serverfile" method="POST">
+        <p><input type="text" required autofocus maxlength="5" placeholder="enter name"></p><p>
+            <input type="text" required value="khushi"  readonly disabled size="10px"></p>
+            <!-- <input type="button" name="submit"> -->
+            <input type="submit" name="submit" value="Submit">
+            <input type="image" src="https://picsum.photos/200/300" alt="image" width="20px" height="23px">
+        <button>Submit</button>
+    </form>
+     <fieldset>
+        <legend>Login Form</legend>
+    <form>
+        <p><input type="email" name="fname" placeholder="email address " required></p>
+        <input type="password" name="password" placeholder="password" required>
+    <button>Login</button>
+    </form>
+     </fieldset>
+
+       <fieldset>
+        <legend>Register Form</legend>
+    <form>
+        <p><input type="text" name="fname" placeholder="Enter name " required></p>
+        <p><input type="email" name="fname" placeholder="email address " required></p>
+        <input type="password" name="password" placeholder="password" required>
+        <p><input type="date"></p>
+        <p>
+            <input type="checkbox"> MERN
+            <input type="checkbox"> Java Full Stack
+            <input type="checkbox"> Python Full Stack
+        </p>
+        <p>
+            <input type="radio" name="batch" >Morning batch
+            <input type="radio" name="batch" >Evening batch
+
+        </p>
+        <p>
+            <select multiple>
+                <option>BE</option>
+                 <option selected>BTECH</option>
+                <option>MCA</option>
+                <option>MBA</option>
+            </select>
+        </p>
+
+    <button>Register</button>
+    </form>
+     </fieldset>
+    
+</body>
+</html>
