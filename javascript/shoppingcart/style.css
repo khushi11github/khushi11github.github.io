@@ -1,0 +1,7 @@
+.container{
+    border:1px gray solid;
+}
+.conatiner ul{
+    list-style-type: none;
+    padding: 0;
+}

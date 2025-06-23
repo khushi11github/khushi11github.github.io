@@ -16,16 +16,14 @@ const showProducts = ()=>{
         
 
 }
-showProducts();
+
 
 const addToCart =(id)=>{
 cart ={...cart,[id]:1};
 
 }
 
-addToCart(1);
-addToCart(3);
- 
+
 
 const showCart = ()=>{
     // console.log(cart);
@@ -40,7 +38,6 @@ const showCart = ()=>{
     console.log(str);
     }
 
-showCart();
 
 const increment =(id)=>{
     cart = {...cart,[id]:cart[id]+1};
@@ -52,16 +49,6 @@ const decrement =(id)=>{
 
 }
 
-increment(1);
-showCart();
-increment(1);
-showCart();
-decrement(1);
-showCart();
-decrement(1);
-showCart();
-decrement(1);
-showCart();
 
 const orderValue=()=>{
 
@@ -72,5 +59,4 @@ const orderValue=()=>{
     console.log(`Total Order Value: ${result}`);
 }
 
-orderValue();
 
