@@ -21,7 +21,11 @@ points.forEach((value,index)=>{
 
 
 //reduce -> accumulate the values
-const result = points.reduce((sum,value)=>{
-    return sum + value;
-},0);
-console.log(result);
+// const result = points.reduce((sum,value)=>{
+//     return sum + value;
+// },0);
+// console.log(result);
+
+// map is used to create a copy of the array with some transformation
+ const newArr = points.map((value,index)=> (value>2));
+ console.log(newArr);
