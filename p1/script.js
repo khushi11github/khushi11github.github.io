@@ -84,6 +84,31 @@ const showHome = () => {
   root.innerHTML = str;
 };
 
+const deposit=()=>{
+    let amount = parseInt(document.getElementById("txtAmount").value);
+    if(isNaN(amount) || amount <= 0){
+        alert("Please enter a valid amount");
+        return;
+    }
+    user.balance += amount;
+    document.getElementById("balance").innerText = user.balance;
+    document.getElementById("txtAmount").value = "";
+}
+
+const withdraw=()=>{
+    let amount = parseInt(document.getElementById("txtAmount").value);
+    if(isNaN(amount) || amount <= 0){
+        alert("Please enter a valid amount");
+        return;
+    }
+    if(user.balance < amount){
+        alert("Insufficient balance");
+        return;
+    }
+    user.balance -= amount;
+    document.getElementById("balance").innerText = user.balance;
+    document.getElementById("txtAmount").value = "";
+}
 
 
 loginForm()
