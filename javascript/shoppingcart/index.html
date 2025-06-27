@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Simple Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
+
 <body>
-    <div class="container"> 
-    <h1>Shopping Cart</h1>
-    
-        <ul>
-            <li>Home</li>
-            <li>Cart</li>
-
-        </ul>
-    <hr>
-    <div id="root"></div>
-    <hr/>
-
+  <h1>My Store</h1>
+  <div class="container">
+    <div class="products">
+      <h2>Products</h2>
+      <div class="product" data-id="1">
+        <p>Product 1 - $10</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+      </div>
+      <div class="product" data-id="2">
+        <p>Product 2 - $15</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+      </div>
+      <div class="product" data-id="3">
+        <p>Product 3 - $20</p>
+        <button onclick="addToCart(3)">Add to Cart</button>
+      </div>
     </div>
-    <h6>Shopping cart.Copyright 20205. All rights reserved</h6>
-    <script src="app.js"></script>
-   
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

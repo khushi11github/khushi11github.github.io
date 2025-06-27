@@ -124,3 +124,11 @@ db.students.aggregate([
         }
   }
 ])
+
+
+
+db.students.aggregate([
+  {$project:{name:1,location:1},
+{$unwind:"$location"}}
+
+])
