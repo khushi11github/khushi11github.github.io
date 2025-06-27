@@ -33,8 +33,8 @@ const loginForm = () => {
     <div>
     <h3>Login Form</h3>
     <p id='errorTxt'></p>
-    <p><input type='text' id='txtEmail'></p>
-    <p><input type='password' id='txtPass'></p>
+    <p><input type='text' placeholder="Enter Email"id='txtEmail'></p>
+    <p><input type='password' placeholder="Enter Password" id='txtPass'></p>
     <p><button onclick='validateUser()'>Submit</button></p>
     <p><button onclick='registerForm()'>Create Account</button></p>
     </div>
@@ -62,9 +62,9 @@ const saveUser = () => {
 const registerForm = () => {
   const str = `<div>
     <h3>Registration Form</h3>
-    <p><input type='text' id='txtName'></p>
-    <p><input type='text' id='txtEmail'></p>
-    <p><input type='password' id='txtPass'></p>
+    <p><input type='text' placeholder=" Enter name" id='txtName'></p>
+    <p><input type='text' placeholder="Enter Email" id='txtEmail'></p>
+    <p><input type='password' placeholder="Enter Password" id='txtPass'></p>
     <p><button onclick='saveUser()'>Submit</button></p>
     <p><button onclick='loginForm()'>Already a member? Login here...</button></p>
     `;
@@ -73,8 +73,14 @@ const registerForm = () => {
 
 const showHome = () => {
   const str = `<div>
-    <h3>Welcome</h3>
+    <h3>Welcome </h3>
     <p><button onclick='loginForm()'>Logout</button></p>
+    <p>TOTAL BALANCE: <span id='balance'>user.balance</span></p>
+    <input type='text' id='txtAmount' placeholder='Enter Amount'>
+    <p><button onclick='deposit()'>Deposit</button></p>
+    <p><button onclick='withdraw()'>Withdraw</button></p>
+    <button onClick-"">Submit</button>
+
     `;
   root.innerHTML = str + "</div>";
 };
