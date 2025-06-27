@@ -8,6 +8,7 @@ const validateUser = () => {
     (value) => value.email === email && value.pass === pass
   );
   if (found) {
+     user = found;
     showHome();
   } else {
     document.getElementById("errorTxt").innerHTML = "Access Denied";
@@ -73,17 +74,16 @@ const registerForm = () => {
 
 const showHome = () => {
   const str = `<div>
-    <h3>Welcome </h3>
+    <h3>Welcome, ${user.name}</h3>
     <p><button onclick='loginForm()'>Logout</button></p>
-    <p>TOTAL BALANCE: <span id='balance'>user.balance</span></p>
+    <p>TOTAL BALANCE: ₹<span id='balance'>${user.balance}</span></p>
     <input type='text' id='txtAmount' placeholder='Enter Amount'>
     <p><button onclick='deposit()'>Deposit</button></p>
     <p><button onclick='withdraw()'>Withdraw</button></p>
-    <button onClick-"">Submit</button>
-
-    `;
-  root.innerHTML = str + "</div>";
+    </div>`;
+  root.innerHTML = str;
 };
+
 
 
 loginForm()
