@@ -1,7 +1,51 @@
-.container{
-    border:1px gray solid;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.conatiner ul{
-    list-style-type: none;
-    padding: 0;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  padding: 40px;
+  color: #333;
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.products, .cart {
+  width: 320px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.products h2, .cart h2 {
+  margin-bottom: 20px;
+  color: #34495e;
+  font-size: 22px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.product {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #f9fafb;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid #ddd;
+}
+
