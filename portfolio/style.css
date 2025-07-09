@@ -136,6 +136,10 @@ display: flex;
   overflow-x: auto; /* scrolls only on smaller screens */
 }
 
+.projectcontainer{
+   background-color: #fffbf5;
+}
+
 .project-box {
   flex: 0 0 350px;
   background: #ffffff;
@@ -163,3 +167,13 @@ display: flex;
 }
 
 
+.projectcontainer h1 {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  margin-bottom: 32px;
+  font-size: 4.5rem;
+  color: #3f55ba;
+  font-weight: 700;
+ 
+}
